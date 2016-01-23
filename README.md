@@ -61,7 +61,7 @@ Step 1. Installing PPJoy.
 Run ppjoy setup.
 
 --------------------------------------------------
-[This part concerns only 64 bit operating systems. If you're using a 32 bit OS, skip until after the next line of dashes!]
+[This part concerns only 64 bit operating systems. If you're using a 32 bit OS, skip until after the next line!]
 
 The setup will display a window saying your OS does not allow installation of unsigned drivers. Click OK
 Then a window will pop up saying configuration data is updated. On clicking OK YOUR COMPUTER WILL REBOOT
