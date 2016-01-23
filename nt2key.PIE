@@ -1,0 +1,149 @@
+if starting {
+   var.sight = 1.0
+   var.switch = 0
+}
+
+if starting then var.sight = 1.0
+ppjoy.analog0 = var.xaxis *var.sight
+ppjoy.analog1 = var.yaxis *var.sight
+ppjoy.digital0 = Keyboard.NUMPAD0
+ppjoy.digital0 = swallow(Key.RightAlt)
+ppjoy.digital1 = Keyboard.N
+ppjoy.digital1 = swallow(Key.NumPadEnter)
+ppjoy.digital2 = Keyboard.NumpadPlus
+ppjoy.digital2 = Keyboard.Apostrophe
+ppjoy.digital2 = Keyboard.RightBracket
+ppjoy.digital3 = Keyboard.Slash
+PPJoy1.Analog2 = - Keyboard.L + Keyboard.O
+PPJoy1.Analog3 = - Keyboard.K + Keyboard.Semicolon
+
+if pressed(keyboard.NumpadMinus) then Toggle(var.switch)
+if var.switch = 0 then var.sight = 1.0
+if var.switch = 1 then var.sight = 0.4
+
+if keyboard.Numpad7{
+var.xaxis = -1
+var.yaxis = -1
+}
+
+if keyboard.Numpad4{
+var.xaxis = -1
+var.yaxis = 0
+}
+
+if keyboard.Numpad8{
+var.xaxis = 0
+var.yaxis = -1
+}
+
+if keyboard.Numpad9{
+var.xaxis = 1
+var.yaxis = -1
+}
+
+if keyboard.Numpad6{
+var.xaxis = 1
+var.yaxis = 0
+}
+
+if keyboard.Numpad3{
+var.xaxis = 1
+var.yaxis = 1
+}
+
+if keyboard.Numpad2{
+var.xaxis = 0
+var.yaxis = 1
+}
+
+if keyboard.Numpad5{
+var.xaxis = 0
+var.yaxis = 1
+}
+
+if keyboard.Numpad1{
+var.xaxis = -1
+var.yaxis = 1
+}
+
+if keyboard.Numpad1 and keyboard.Numpad4{
+var.xaxis = -1
+var.yaxis = 0.5
+}
+
+if keyboard.Numpad4 and keyboard.Numpad8{
+var.xaxis = -1
+var.yaxis = -1
+}
+
+if keyboard.Numpad7 and keyboard.Numpad8{
+var.xaxis = -0.5
+var.yaxis = -1
+}
+
+if keyboard.Numpad7 and keyboard.Numpad4{
+var.xaxis = -1
+var.yaxis = -0.5
+}
+
+if keyboard.Numpad8 and keyboard.Numpad9{
+var.xaxis = 0.5
+var.yaxis = -1
+}
+
+if keyboard.Numpad9 and keyboard.Numpad6{
+var.xaxis = 1
+var.yaxis = -0.5
+}
+
+if keyboard.Numpad6 and keyboard.Numpad3{
+var.xaxis = 1
+var.yaxis = 0.5
+}
+
+if keyboard.Numpad3 and keyboard.Numpad2{
+var.xaxis = 0.5
+var.yaxis = 1
+}
+
+if keyboard.Numpad2 and keyboard.Numpad1{
+var.xaxis = -0.5
+var.yaxis = 1
+}
+
+if keyboard.Numpad4 and keyboard.Numpad2{
+var.xaxis = -1
+var.yaxis = 1
+}
+
+if keyboard.Numpad2 and keyboard.Numpad6{
+var.xaxis = 1
+var.yaxis = 1
+}
+
+if keyboard.Numpad6 and keyboard.Numpad8{
+var.xaxis = 1
+var.yaxis = -1
+}
+
+if keyboard.Numpad4 and keyboard.Numpad5{
+var.xaxis = -1
+var.yaxis = 1
+}
+
+if keyboard.Numpad5 and keyboard.Numpad6{
+var.xaxis = 1
+var.yaxis = 1
+}
+
+if keyboard.Numpad3 and keyboard.Numpad5{
+var.xaxis = 0.5
+var.yaxis = 1
+}
+
+if keyboard.Numpad5 and keyboard.Numpad1{
+var.xaxis = -0.5
+var.yaxis = 1
+}
+
+//Done solely for my own entertainment, I do not expect anybody to actually use this.
