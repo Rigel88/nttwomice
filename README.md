@@ -61,7 +61,7 @@ Step 1. Installing PPJoy.
 Run ppjoy setup.
 
 --------------------------------------------------
-[This part concerns only 64 bit operating systems. If you're using a 32 bit OS, skip until after the next line!]
+[This part concerns only 64 bit operating systems. If you're using a 32 bit OS, skip until after the next line of ==='s!]
 
 The setup will display a window saying your OS does not allow installation of unsigned drivers. Click OK
 Then a window will pop up saying configuration data is updated. On clicking OK YOUR COMPUTER WILL REBOOT
@@ -73,7 +73,7 @@ If you disable test mode after installation, the driver won't run = you can't pl
 
 If you're no longer playing NT with two mice though, it would be sensible to disable test mode, even if only to get rid of the watermark. Which is easily done, use microsoft's guide.
 https://support.microsoft.com/en-us/kb/2509241
-----------------------------------------------------
+===============================================================
 
 Follow instructions of the installer
 
