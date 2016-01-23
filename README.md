@@ -62,6 +62,7 @@ Run ppjoy setup.
 
 --------------------------------------------------
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
 [This part concerns only 64 bit operating systems. If you're using a 32 bit OS, skip until after the next line of V's!]
 
 The setup will display a window saying your OS does not allow installation of unsigned drivers. Click OK
