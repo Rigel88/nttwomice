@@ -4,17 +4,25 @@
  nt2mice.pie_laptop - script for laptops
  nt2key.pie - script for keyboard only player 2
  
+ 
  Supported operating systems:
  
+ 
  Windows 7
+ 
  Windows 8/8.1
+ 
  Windows 10
+ 
  
  Requirements:
  
  PPJoy 0.8.4.6
+ 
  GlovePIE 0.45
+ 
  XBOX360 Controller Emulator
+ 
  
  Long sescription:
  
@@ -27,12 +35,16 @@ Tools you will need:
 PPJoy 0.8.4.6
 http://uploaded.net/file/fzhe96kn
 
+
 GlovePIE 0.45
 http://glovepie.org/lpghjkwer.php
 
+
 XBOX360 Controller Emulator (preconfigured)
 https://mega.nz/#!Op5HkSxJ!-fztAvWSTh08sthXEn-F37ZZIkOZRNlsmQMeBn79zXM
+
 or
+
 X360CE
 http://www.x360ce.com/
 
