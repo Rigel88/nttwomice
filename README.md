@@ -21,7 +21,7 @@
  
  GlovePIE 0.45
  
- XBOX360 Controller Emulator
+ XBOX360 Controller Emulator (or x360ce)
  
  
  Long sescription:
