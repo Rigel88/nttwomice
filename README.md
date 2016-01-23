@@ -102,15 +102,21 @@ Select 4 axes, 8 buttons, 0 POV hats
 All the rest should be set by default, but check nonetheless:
 
 Axis 1 - X axis
+
 Axis 2 - Y Axis
+
 Axis 3 - Z Axis
+
 Axis 4 - Z rotation
 
 click "Next"
 
 X Axis - Analog 0
+
 Y Axis - Analog 1
+
 Z Axis - Analog 2
+
 Z Rotation - Analog 3
 
 click "Next"
@@ -128,14 +134,22 @@ Step 2. Installing XBOX360 Controller Emulator
 Unzip files from xinputemu3.zip to Nuclear Throne Root folder (On Steam: right click Nuclear Throne in your Steam library and go to Properties. Go to Local Files tab.
 Click Browse local files. This will open the Nuclear Throne files folder.)
 
-Note: If you want to use x360ce instead of xinputemu3, set up your layout like this in x360ce program:
+Note: If you want to use x360ce instead of xinputemu3, set up your layout like this in x360ce window:
+
 Left Trigger - button 2
+
 Right Trigger - button 1
+
 Y button - button 3
+
 X button - button 4
+
 Left Stick Axis X - Axis 6
+
 Left Stick Axis Y - Axis 3
+
 Right Stick Axis X - Axis 1
+
 Right Stick Axis Y - Inverted Axis 2
 
 Step 3. Setting up GlovePIE
