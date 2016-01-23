@@ -1,0 +1,86 @@
+if starting {
+   var.sens1 = 1.0 //Replace "1.0" with higher or lower value to adjust sensitivity for Player 1 (example: 1.5 would mean 50% increase)
+   var.sens2 = 1.0 //Replace "1.0" with higher or lower value to adjust sensitivity for Player 2 (example: 0.9 would mean 10% decrease)
+   var.switch = 0
+}
+Mouse.SwallowButtons = true
+Mouse.SwallowMovement = true
+Mouse.SwallowWheels = true
+
+if var.switch = 0 then
+var.maus1x = Delta(mouse2.DirectInputX)
+var.maus1y = Delta(mouse2.DirectInputY)
+var.maus2x = delta(MapRange(mouse3.DirectInputX, 0,767, -1,1))
+var.maus2y = delta(MapRange(mouse3.DirectInputY, 0,767, -1,1))
+var.maus1lb = mouse2.LeftButton
+var.maus1rb = mouse2.RightButton
+var.maus1mb = mouse2.MiddleButton
+var.maus1xb1 = mouse2.XButton1
+var.maus1xb2 = mouse2.XButton2
+var.maus1b6 = mouse2.Button6
+var.maus1b7 = mouse2.Button7
+var.maus1b8 = mouse2.Button8
+var.maus2lb = mouse3.LeftButton
+var.maus2rb = mouse3.RightButton
+var.maus2mb = mouse3.MiddleButton
+var.maus1whl = delta(mouse2.DirectInputZ)
+var.maus2whl = delta(smooth(mouse3.directinputZ, 5, 10))
+endif
+
+if var.switch = 1 then
+var.maus1x = Delta(mouse3.DirectInputX)
+var.maus1y = Delta(mouse3.DirectInputY)
+var.maus2x = delta(MapRange(mouse2.DirectInputX, 0,767, -1,1))
+var.maus2y = delta(MapRange(mouse2.DirectInputY, 0,767, -1,1))
+var.maus1lb = mouse3.LeftButton
+var.maus1rb = mouse3.RightButton
+var.maus1mb = mouse3.MiddleButton
+var.maus1xb1 = mouse3.XButton1
+var.maus1xb2 = mouse3.XButton2
+var.maus1b6 = mouse3.Button6
+var.maus1b7 = mouse3.Button7
+var.maus1b8 = mouse3.Button8
+var.maus2lb = mouse2.LeftButton
+var.maus2rb = mouse2.RightButton
+var.maus2mb = mouse2.MiddleButton
+var.maus1whl = delta(mouse3.DirectInputZ)
+var.maus2whl = delta(smooth(mouse2.directinputZ, 5, 10))
+endif
+
+if pressed(keyboard.F2) then Toggle(var.switch)
+
+mouse.DirectInputX = mouse.DirectInputX + var.maus1x *var.sens1
+mouse.DirectInputY = mouse.DirectInputY + var.maus1y *var.sens1
+mouse.LeftButton = var.maus1lb
+mouse.RightButton = var.maus1rb
+mouse.MiddleButton = var.maus1mb
+mouse.XButton1 = var.maus1xb1
+mouse.XButton2 = var.maus1xb2
+mouse.Button6 = var.maus1b6
+mouse.Button7 = var.maus1b7
+mouse.Button8 = var.maus1b8
+ppjoy.analog0 = ppjoy.analog0 + var.maus2x *var.sens2
+ppjoy.analog1 = ppjoy.analog1 + var.maus2y *var.sens2
+ppjoy.digital0 = var.maus2lb
+ppjoy.digital1 = var.maus2rb
+ppjoy.digital2 = var.maus2mb
+PPJoy1.Analog2 = - NUMPAD5 + NUMPAD8
+PPJoy1.Analog3 = - NUMPAD4 + NUMPAD6
+ppjoy.digital3 = Keyboard.NumpadPlus
+ppjoy.digital2 = Keyboard.NUMPAD0
+PPJoy1.Analog2 = - Keyboard.L + Keyboard.O
+PPJoy1.Analog3 = - Keyboard.K + Keyboard.Semicolon
+ppjoy.digital2 = Keyboard.N
+ppjoy.digital3 = Keyboard.Apostrophe
+Mouse.WheelUp = var.maus1whl -120
+Mouse.WheelDown = var.maus1whl +120
+ppjoy.digital2 = var.maus2whl
+if pressed(keyboard.Equals) then var.sens2 = var.sens2 +0.1;
+if pressed(keyboard.Minus) then var.sens2 = var.sens2 -0.1;
+if pressed(keyboard.RightBracket) then var.sens1 = var.sens1 +0.1;
+if pressed(keyboard.LeftBracket) then var.sens1 = var.sens1 -0.1;
+if var.sens1 <= 0.0001 then var.sens1 = 0.1
+if var.sens2 <= 0.0001 then var.sens2 = 0.1
+//Two Mouse support GlovePIE script for Nuclear Throne co-op v1.4 (laptop)
+//Requires PPJoy and x360ce
+//by Rigel [fakeidmail@yandex.ru]
