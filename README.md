@@ -1,14 +1,17 @@
  Short description:
+ 
  nt2mice.pie - script for desktop computers
  nt2mice.pie_laptop - script for laptops
  nt2key.pie - script for keyboard only player 2
  
  Supported operating systems:
+ 
  Windows 7
  Windows 8/8.1
  Windows 10
  
  Requirements:
+ 
  PPJoy 0.8.4.6
  GlovePIE 0.45
  XBOX360 Controller Emulator
@@ -19,7 +22,7 @@ This tutorial is for Windows operating systems. Tested on Windows 7/8.1/10.
 Presumably does not work on Windows XP for some reason (needs confirmation)
 If you find ways to do it on other operating systems, message me, I will put a link to your guide or your information here.
 
-Tools you will need
+Tools you will need:
 
 PPJoy 0.8.4.6
 http://uploaded.net/file/fzhe96kn
@@ -150,6 +153,7 @@ To return your computer controls to normal state, simply press "stop" in GlovePI
 
 
 Controls:
+
 Nuclear throne has controls all over the keyboard (wasd AND arrow keys AND numpad), which makes it kind of complicated, because even if you have two keyboards, you can't use the same keys for both players.
 
 Note: As of update 95 it's possible to remap controls in-game, which allows to easily customize player 1 keys. However, the alternative control sets are still hardcoded in, so basically this gives us nothing.
