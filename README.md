@@ -1,8 +1,12 @@
  Short description:
  
  nt2mice.pie - script for desktop computers
+ 
  nt2mice.pie_laptop - script for laptops
+ 
  nt2key.pie - script for keyboard only player 2
+ 
+  xbox360cemu.ini - configuration file for XBOX360 Controller Emulator
  
  
  Supported operating systems:
@@ -38,9 +42,13 @@ http://uploaded.net/file/fzhe96kn
 
 GlovePIE 0.45
 http://glovepie.org/lpghjkwer.php
+At this moment GlovePIE website appears to be having some trouble. I've temporarily uploaded the program here:
+https://mega.nz/#!j5hzTBJY!rU2YLhGXNXvGTOeqY4W1apKzMtMaXx9NBrZ-DTA_ag4
 
 
-XBOX360 Controller Emulator (preconfigured)
+XBOX360 Controller Emulator
+https://drive.google.com/folderview?id=0B4lfqq0DpUo-eG0xREpIaGV5Zlk&usp=sharing&tid=0B4lfqq0DpUo-WGV0OVVTS1Z0LVk#list
+or preconfigured
 https://mega.nz/#!Op5HkSxJ!-fztAvWSTh08sthXEn-F37ZZIkOZRNlsmQMeBn79zXM
 
 or
