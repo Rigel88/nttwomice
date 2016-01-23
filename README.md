@@ -235,7 +235,7 @@ Left: Numpad 4 / K
 
 Right: Numpad 6 / ;
 
-- : Player 2 mouse sensitivity -
+-(minus key) : Player 2 mouse sensitivity -
 
 = : Player 2 mouse sensitivity +
 
